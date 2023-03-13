@@ -68,8 +68,6 @@ resources = {
 
 is_on = True
 
-Money = 0
-# TODO: 1. Print report of  all coffee machine resources
 while is_on:
     name = input("What would you like? (espresso/latte/cappuccino): ")
     if name == "off":
