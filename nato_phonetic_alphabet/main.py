@@ -1,6 +1,16 @@
 import pandas
 
-name = input("Input your message: ").upper()
-data_nato = pandas.read_csv("nato_phonetic_alphabet.csv")
-nato = [row.code for j in name for (index, row) in data_nato.iterrows() if row.letter == j]
-print(nato)
+phonetic_dict = {row.letter: row.code for (index, row) in data_nato.iterrows()}
+
+def generate_phonetic():
+    word = input("Enter a word: ").upper()
+    try:
+        output_list = [phonetic_dict[letter] for letter in word]
+    except KeyError:
+        print("Error")
+        generate_phonetic()
+    else:
+        print(output_list)
+
+generate_phonetic()
+
