@@ -1,0 +1,1 @@
+Password generator with interface and using json files as data storage, the user can check whether a certain service has a password in json file or not. You can also customize the password to the clipboard if the user wants to write it somewhere else
