@@ -1,0 +1,1 @@
+Automatic sending of greeting messages, through the cycle check whether there is the right date of birth, and then, the data are transmitted to the function with which, send congratulations to the specified address
